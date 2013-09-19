@@ -10,4 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require_tree .
+//= require jquery
+//= require jquery_ujs
+//= require very_simple_cms/jquery-migrate-1.2.1.js
+
