@@ -5,7 +5,7 @@ module VerySimpleCms
     end
 
     def cms_edit_link(advanced_class=nil)
-      link_to "Редактировать", VerySimpleCms.editor_path + request.path, 
+      link_to t(:edit_link, scope: [:very_simple_cms]), VerySimpleCms.editor_path + request.path, 
         class: "admin_edit_link #{advanced_class}", data: { save_url: very_simple_cms.content_url }
     end  
   end
