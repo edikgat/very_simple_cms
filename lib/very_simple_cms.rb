@@ -1,4 +1,5 @@
 require "very_simple_cms/engine"
+require "yaml_record_rails_4"
 
 module VerySimpleCms
   mattr_accessor :editor_path

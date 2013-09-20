@@ -1,6 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails/all'
+require "action_controller/railtie"
+require "rails/test_unit/railtie"
+require "sprockets/railtie"
 
 Bundler.require(*Rails.groups)
 require "very_simple_cms"
