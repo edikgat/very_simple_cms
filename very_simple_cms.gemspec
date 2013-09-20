@@ -7,7 +7,7 @@ require "very_simple_cms/version"
 Gem::Specification.new do |s|
   s.name        = "very_simple_cms"
   s.version     = VerySimpleCms::VERSION
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/edikgat/very_simple_cms"
   s.authors       = ["Eduard Gataullin, Ruslan Hamidullin"]
   s.email         = ["edikgat@gmail.com"]
   s.description = <<-EOF
@@ -27,7 +27,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.0.0"
   s.add_dependency "yaml_record_rails_4"
-
-  # s.add_development_dependency "sqlite3"
   
 end
