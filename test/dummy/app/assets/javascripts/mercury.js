@@ -451,21 +451,16 @@ window.Mercury = {
 
 };
 
-$(window).on('mercury:ready', function() {
-  // alert("dsasd");
-  var link = $('.admin_edit_link');
+        $(window).on('mercury:ready', function() {
+          var link = $('.admin_edit_link');
 
-  if(Mercury.saveUrl !== null) { 
-    console.log(link);
-    // console.log(link.attr('data-save-url'));
-    // console.log(link.attr('data-save-url');
-    Mercury.saveUrl = link.attr('data-save-url');
-    console.log(Mercury.saveUrl);
-  }
-    link.hide(Mercury.saveUrl);
-  // }
-});
+          if(Mercury.saveUrl !== null) { 
+            Mercury.saveUrl = link.attr('data-save-url');
+          }
+          link.hide(Mercury.saveUrl);
+        });
 
-$(window).on('mercury:saved', function() {
-  window.location = window.location.href.replace(/\/editor\//i, '/');
-});
+        $(window).on('mercury:saved', function() {
+          window.location = window.location.href.replace(/\/editor\//i, '/');
+        });
+        

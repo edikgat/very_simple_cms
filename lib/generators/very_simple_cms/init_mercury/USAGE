@@ -1,0 +1,5 @@
+Description:
+    Add some needed code to app/assets/jsvascripts/mercury.js
+
+Example:
+    rails generate very_simple_cms:init_mercury
