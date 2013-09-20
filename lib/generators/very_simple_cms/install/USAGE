@@ -1,0 +1,8 @@
+Description:
+    Creates defaults config for VerySimpleCms gem 
+
+Example:
+    rails generate very_simple_cms:install
+
+    This will create:
+        config/initializers/very_simple_cms.rb
