@@ -8,13 +8,13 @@ Gem::Specification.new do |s|
   s.name        = "very_simple_cms"
   s.version     = VerySimpleCms::VERSION
   s.homepage    = "https://github.com/edikgat/very_simple_cms"
-  s.authors       = ["Eduard Gataullin, Ruslan Hamidullin"]
-  s.email         = ["edikgat@gmail.com"]
+  s.authors     = ["Eduard Gataullin, Ruslan Hamidullin"]
+  s.email       = ["edikgat@gmail.com"]
+  s.licenses    = ["MIT"]
   s.description = <<-EOF
     Very-Simple-Cms is a lightweight Content Management System, written in Ruby using
     the Ruby on Rails web framework. Very-Simple-Cms has the simplicity of a static site
-    generator, but (being a fully fledged Rack application) allows you to
-    serve dynamic content on demand.
+    generator, but allows you to serve dynamic content on demand.
 
     Content is stored on disk in plain text files (there is no database).
     Edit your content in a text editor and keep it under version control
