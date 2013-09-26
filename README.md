@@ -51,21 +51,21 @@ To show text from cms use
 this code will display content that located by default in config/cms/{your_locale}/html_blocks.yml and have following title, also you can change file name and it's path by editing config/initializers/very_simple_cms.rb
 
 ## Options
-- **editor path**
+- **editor path**  
  `VerySimpleCms.editor_path` 
 it is path to wysiwyg editor that you use in your app 
-- **translate** CMS support I18n. If you want to use multiple languages in your app simply set
-        VerySimpleCms.translatable = true
-this will say cms to use folders that have name of locale to save cms content like
-        config/cms/{your_locale}/html_blocks.yml
-if you set
-        VerySimpleCms.translatable = false
-cms will save changes in path like
-        config/cms/{your_locale}/html_blocks.yml
-- **name of yml file** You can change filename to save changes like
-        VerySimpleCms.source_file_name = '/html_blocks'
-- **source files root** You can change path to save changes like
-        VerySimpleCms.source_files_root = "config/cms/"
+- **translate** CMS support I18n. If you want to use multiple languages in your app simply set  
+`VerySimpleCms.translatable = true`  
+this will say cms to use folders that have name of locale to save cms content like  
+`config/cms/{your_locale}/html_blocks.yml`  
+if you set  
+`VerySimpleCms.translatable = false`  
+cms will save changes in path like  
+`config/cms/{your_locale}/html_blocks.yml`  
+- **name of yml file** You can change filename to save changes like  
+`VerySimpleCms.source_file_name = '/html_blocks'
+- **source files root** You can change path to save changes like  
+  `VerySimpleCms.source_files_root = "config/cms/"`
 
 ##Example
 VerySimpleCms have build in simple test and example application that located in 'test/dummy' path
