@@ -17,6 +17,7 @@ module VerySimpleCms
           )
           static_text.save
         end
+        Rails.cache.write(cache_name_string(key), (static_text.try(:body).html_safe))
       end
       render text: ""
     end

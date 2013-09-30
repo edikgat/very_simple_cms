@@ -1,7 +1,10 @@
 module VerySimpleCms
   module CmsHelper
     def cms_block(title)
-      raw(HtmlBlock.find_by_attribute(dynamic_save_source, :title, title).try(:body))
+      Rails.cache.fetch(cache_name_string(title)) do
+        block = HtmlBlock.find_by_attribute(dynamic_save_source, :title, title)
+        raw(block.try(:body))
+      end
     end
 
     def cms_edit_link(advanced_class=nil)

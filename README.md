@@ -50,7 +50,7 @@ To show text from cms use
     cms_block('title_of_text_area')
 this code will display content that located by default in config/cms/{your_locale}/html_blocks.yml and have following title, also you can change file name and it's path by editing config/initializers/very_simple_cms.rb
 
-## Options
+##Options
 - **editor path**  
  `VerySimpleCms.editor_path` 
 it is path to wysiwyg editor that you use in your app 
@@ -66,6 +66,15 @@ cms will save changes in path like
 `VerySimpleCms.source_file_name = '/html_blocks'
 - **source files root** You can change path to save changes like  
   `VerySimpleCms.source_files_root = "config/cms/"`
+
+##Caching
+This Cms use yml files to save user data, but reading from disk is very slow, so to improve your application pervomance you should use caching.  
+Very-Simple-Cms fully support caching, so to cash all cms fragments simple set
+
+    config.action_controller.perform_caching = true
+
+to learn more about caching that rails provides visit [Ruby on Rails Guides](http://guides.rubyonrails.org/caching_with_rails.html)
+
 
 ##Example
 VerySimpleCms have build in simple test and example application that located in 'test/dummy' path

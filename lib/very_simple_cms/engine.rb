@@ -6,6 +6,7 @@ module VerySimpleCms
       ActiveSupport.on_load :action_controller do
         helper VerySimpleCms::CmsHelper
         helper VerySimpleCms::SharedHelper
+        helper VerySimpleCms::ApplicationHelper
       end
     end
   end
